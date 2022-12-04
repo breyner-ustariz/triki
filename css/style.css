@@ -118,7 +118,7 @@ header img {
    left: 15%;
    background-color: rgba(0, 0, 0, 0.726);
    width: 70%;
-   height: 85vh;
+   height: 70vh;
    display: flex;
    transition: all ease-out 2s;
    visibility: hidden;
@@ -257,7 +257,14 @@ header img {
    font-size: 2rem;
 }
 #cerrar {
+   background-color: transparent;
    border-bottom: 1px solid white;
    color: white;
    cursor: pointer;
+}
+.jugador1 {
+   background: linear-gradient(#b90000, #000);
+}
+.jugador2 {
+   background: linear-gradient(#0b63f1, #000);
 }

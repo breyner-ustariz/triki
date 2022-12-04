@@ -35,6 +35,10 @@ const buttonActive7 = document.getElementById('button-active7');
 const buttonActive8 = document.getElementById('button-active8');
 const buttonActive9 = document.getElementById('button-active9');
 
+const jugador1 = document.getElementById('caja_mobil1');
+const jugador2 = document.getElementById('caja_mobil2');
+console.log(jugador1)
+
 arrayButtons =[
    buttonActive1, buttonActive2, buttonActive3, buttonActive4,buttonActive5, buttonActive6, buttonActive7, buttonActive8, buttonActive9
 ]
@@ -115,6 +119,7 @@ function random(newGame){
       img1.style.opacity = '1';
       const img2 = document.getElementById('img-player2');
       img2.style.opacity = '0.2';
+      jugador1.classList.add('jugador1')
    } else {
       
       simbolo = 'X'
@@ -125,6 +130,7 @@ function random(newGame){
       img2.style.opacity = '1'
       const img1 = document.getElementById('img-player1');
       img1.style.opacity = '0.2';
+      jugador2.classList.add('jugador2')
       player1 = false;
    }
    let modal = document.querySelectorAll('.modal')[0];
@@ -165,6 +171,8 @@ arrayButtons.forEach((celda)=>{
             img2.style.transform = "scale(1.2)";
             img2.style.opacity = '1'
             player1 = false
+            jugador1.classList.remove('jugador1')
+            jugador2.classList.add('jugador2')
 
             validaciones()
             
@@ -182,6 +190,8 @@ arrayButtons.forEach((celda)=>{
             const img2 = document.getElementById('img-player2');
             img2.style.opacity = '0.2';
             img1.style.opacity = '1'
+            jugador2.classList.remove('jugador2')
+            jugador1.classList.add('jugador1')
             validaciones()
          }
 
@@ -695,6 +705,11 @@ reset.addEventListener('click', ()=>{
    score2 = 0;
    score_p1.innerText = score1;
    score_p2.innerText = score2;
+})
+cerrar.addEventListener('click',()=>{
+   
+      modal_ganador.classList.add('ganador')
+   
 })
 
 
