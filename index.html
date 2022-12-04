@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+
+   <!-- estilos pantalla tablet -->
+   <link rel="stylesheet" href="css/styleTablet.css" media="screen and (min-width: 600px)">
+
+   <!-- scrren destock -->
+   <link rel="stylesheet" href="css/styleDestock.css" media="screen and (min-width: 870px)">
+   <!-- fuente googlefonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap" rel="stylesheet">
+   <title>Tic Tac Toc</title>
+</head>
+<body id="body">
+   
+   <header class="header">
+      <img src="/img/logo.png" alt="logo">
+      <h1 class="header__h1">
+         Tic Tac Toc
+      </h1>
+      <img src="/img/logo.png" alt="logo">
+   </header>
+   <main class="main" id="main">
+         <aside class="main__aside">
+            <h2 class="main__aside-h2" id="player1-title">
+               Jugador 1
+            </h2>
+            <picture class="main__aside-picture">
+               <img src="img/jugador1.png" alt="incial" class="main__aside-pictur" id="img-player1">
+            </picture>
+            <div class="main__div">
+               <p class="main__div-p">
+                  Puntuacion
+               </p>
+               <p class="main__div-score" id="score1">0</p>
+            </div>
+         </aside>
+         <section class="main__section">
+            <table class="main__section-table">
+               <tr>
+                  <th id="celda1_1">
+                     <button class="button-cel button-select" type="button" id="button-active1"></button>
+                  </th>
+   
+                  <th id="celda1_2">
+                     <button class="button-cel button-select" type="button" id="button-active2"></button>
+                  </th>
+   
+                  <th id="celda1_3">
+                     <button class="button-cel button-select" type="button" id="button-active3"></button>
+                  </th>
+               </tr>
+   
+               <tr>
+                  <th id="celda2_1">
+                     <button class="button-cel button-select" type="button" id="button-active4"></button>
+                  </th>
+   
+                  <th id="celda2_2">
+                     <button class="button-cel button-select" type="button" id="button-active5"></button>
+                  </th>
+   
+                  <th id="celda2_3">
+                     <button class="button-cel button-select" type="button" id="button-active6"></button>
+                  </th>
+               </tr>
+   
+               <tr>
+                  <th id="celda3_1">
+                     <button class="button-cel button-select" type="button" id="button-active7"></button>
+                  </th>
+   
+                  <th id="celda3_2">
+                     <button class="button-cel button-select" type="button" id="button-active8"></button>
+                  </th>
+   
+                  <th id="celda3_3">
+                     <button class="button-cel button-select" type="button" id="button-active9"></button>
+                  </th>
+               </tr>
+            </table>
+         </section>
+         <div class="main__aside">
+            <h2 class="main__aside-h2" id="player2-title">
+               Jugador 2
+            </h2>
+            <picture class="main__aside-picture">
+               <img src="img/jugador2.png" alt="incial" class="main__aside-pictur" id="img-player2">
+            </picture>
+            <div class="main__div">
+               <p class="main__div-p">
+                  Puntuacion
+               </p>
+               <p class="main__div-score" id="score2">0</p>
+            </div>
+         </div>
+     
+      <div class="main__div-mobile">
+         <div class="player-mobile">
+            <p class="player-mobile-p">
+               jugador 1
+            </p>
+            <p id="score1m">0</p>
+         </div>
+
+         <div class="player-mobile">
+            <p class="player-mobile-p">
+               jugador 2
+            </p>
+            <p id="score2m">0</p>
+         </div>
+         
+      </div>
+   </main>
+   <div id="ganador" class="">
+      <h1>GANADOR</h1>
+      <img src="" alt="" id="img-ganador">
+      <h2 id="cerrar">Cerrar</h2>
+   </div>
+   <!-- modal animacion -->
+   <div class="modal-container" id="modal">
+      <div class="modal modal-close">
+         <h2>Inicia</h2>
+         <img src="img/jugador1.png" alt="jugador" id="img-modal">
+         <div class="modal-text">
+            <h1 id="playerInit"></h1>
+         </div>
+         <button type="button" class="footer__button-start start-button" id="start">
+            comenzar
+         </button>
+      </div>
+
+   </div>
+   
+   <!-- fin modal -->
+   <footer class="footer">
+      <button class="footer__button-start css-button-shadow-border--green" type="button" id="ranGame">
+         Turno Aleatorio
+      </button>
+      <button type="button" class="footer__button-start" id="nextGame" disabled>
+         Siguiente Juego 
+      </button>
+      <button type="button" class="footer__button-start" id="resetGame" disabled>
+         Reinciar
+      </button>
+   </footer>
+   
+
+
+   <script src="js/index.js"></script>
+</body>
+</html>

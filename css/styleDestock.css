@@ -1,0 +1,18 @@
+.header , .footer {
+   height: 80px;
+}
+.main {
+   height: calc(100vh  - 160px);
+}
+.modal img {
+   width: 30%;
+}
+
+#ganador {
+   left: 30%;
+   width: 40%;
+   height: 85vh;
+}
+#ganador img {
+   width: 60%;
+}
