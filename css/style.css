@@ -258,9 +258,14 @@ header img {
 }
 #cerrar {
    background-color: transparent;
+   padding: 5px 10px;
    border-bottom: 1px solid white;
    color: white;
    cursor: pointer;
+   transition: transform 1s;
+}
+.cerrarwinn {
+   transform: translateY(200%);
 }
 .jugador1 {
    background: linear-gradient(#b90000, #000);

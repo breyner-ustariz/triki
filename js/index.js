@@ -708,7 +708,7 @@ reset.addEventListener('click', ()=>{
 })
 cerrar.addEventListener('click',()=>{
    
-      modal_ganador.classList.add('ganador')
+      modal_ganador.classList.add('cerarwinn')
    
 })
 
