@@ -5,6 +5,7 @@
 }
 html {
    font-size: 62.5%;
+   height: 100vh;
 }
 body {
    height: 100vh;
@@ -42,8 +43,7 @@ header img {
    padding: 20px;
    display: flex;
    flex-direction: column;
-   gap: 20x;
-   justify-content: center;
+   justify-content: space-around;
 }
 .main__aside {
    display: none;
@@ -51,7 +51,6 @@ header img {
 .main__section {
    width: 100%;
    height: 60%;
-   margin: 0px 20px;
    border: 5px solid white;
    border-radius: 20px;
    padding: 10px 10px;
@@ -144,8 +143,7 @@ header img {
 }
 
 .main__div-mobile {
-   margin-top: 20px;
-   height: 15%;
+   height: 20%;
    display: flex;
    justify-content: space-around;
    color: white;
