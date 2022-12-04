@@ -265,7 +265,7 @@ header img {
    transition: transform 1s;
 }
 .cerrarwinn {
-   transform: translateY(200%);
+   transform: translateY(-200%);
 }
 .jugador1 {
    background: linear-gradient(#b90000, #000);
