@@ -202,6 +202,12 @@ arrayButtons.forEach((celda)=>{
             reset.style.backgroundColor = '#8BBCCC'
             reset.style.color = 'black'
          }
+         if (score1m.innerText === '3' || score2m.innerText === '3'){
+            nextGame.disabled = true;
+            nextGame.style.cursor = 'default';
+            nextGame.style.backgroundColor = 'transparent';
+            console.log('funciona')
+         }
           
    })
   
@@ -239,7 +245,11 @@ function validaciones(){
          score2 += 1;
          score2m.innerText = score2;
          score_p2.innerText = score2
+        
          if (score_p2.innerText === '3' || score2m.innerText === '3'){
+            nextGame.disabled = true;
+            nextGame.style.cursor = 'default';
+            nextGame.style.backgroundColor = 'transparent'
             modal_ganador.style.visibility = 'visible'
             modal_ganador.classList.toggle('mostrar_ganador')
             img_ganador.src = 'img/jugador2.png'
@@ -293,7 +303,11 @@ function validaciones(){
          score2 += 1;
          score2m.innerText = score2;
          score_p2.innerText = score2
+        
          if (score_p2.innerText === '3' || score2m.innerText === '3'){
+            nextGame.disabled = true;
+            nextGame.style.cursor = 'default';
+            nextGame.style.backgroundColor = 'transparent'
             modal_ganador.style.visibility = 'visible'
             modal_ganador.classList.toggle('mostrar_ganador')
             img_ganador.src = 'img/jugador2.png'
@@ -345,7 +359,11 @@ function validaciones(){
          score2 += 1;
          score2m.innerText = score2;
          score_p2.innerText = score2
+        
          if (score_p2.innerText === '3' || score2m.innerText === '3'){
+            nextGame.disabled = true;
+            nextGame.style.cursor = 'default';
+            nextGame.style.backgroundColor = 'transparent'
             modal_ganador.style.visibility = 'visible'
             modal_ganador.classList.toggle('mostrar_ganador')
             img_ganador.src = 'img/jugador2.png'
@@ -402,7 +420,11 @@ function validaciones(){
          score2 += 1;
          score2m.innerText = score2;
          score_p2.innerText = score2
+        
          if (score_p2.innerText === '3' || score2m.innerText === '3'){
+            nextGame.disabled = true;
+            nextGame.style.cursor = 'default';
+            nextGame.style.backgroundColor = 'transparent'
             modal_ganador.style.visibility = 'visible'
             modal_ganador.classList.toggle('mostrar_ganador')
             img_ganador.src = 'img/jugador2.png'
@@ -461,7 +483,11 @@ function validaciones(){
          score2 += 1;
          score2m.innerText = score2;
          score_p2.innerText = score2
+        
          if (score_p2.innerText === '3' || score2m.innerText === '3'){
+            nextGame.disabled = true;
+            nextGame.style.cursor = 'default';
+            nextGame.style.backgroundColor = 'transparent'
             modal_ganador.style.visibility = 'visible'
             modal_ganador.classList.toggle('mostrar_ganador')
             img_ganador.src = 'img/jugador2.png'
@@ -518,7 +544,11 @@ function validaciones(){
          score2 += 1;
          score2m.innerText = score2;
          score_p2.innerText = score2
+        
          if (score_p2.innerText === '3' || score2m.innerText === '3'){
+            nextGame.disabled = true;
+            nextGame.style.cursor = 'default';
+            nextGame.style.backgroundColor = 'transparent'
             modal_ganador.style.visibility = 'visible'
             modal_ganador.classList.toggle('mostrar_ganador')
             img_ganador.src = 'img/jugador2.png'
@@ -575,7 +605,11 @@ function validaciones(){
          score2 += 1;
          score2m.innerText = score2;
          score_p2.innerText = score2
+        
          if (score_p2.innerText === '3' || score2m.innerText === '3'){
+            nextGame.disabled = true;
+            nextGame.style.cursor = 'default';
+            nextGame.style.backgroundColor = 'transparent'
             modal_ganador.style.visibility = 'visible'
             modal_ganador.classList.toggle('mostrar_ganador')
             img_ganador.src = 'img/jugador2.png'
@@ -632,7 +666,11 @@ function validaciones(){
          score2 += 1;
          score2m.innerText = score2;
          score_p2.innerText = score2
+        
          if (score_p2.innerText === '3' || score2m.innerText === '3'){
+            nextGame.disabled = true;
+            nextGame.style.cursor = 'default';
+            nextGame.style.backgroundColor = 'transparent'
             modal_ganador.style.visibility = 'visible'
             modal_ganador.classList.add('mostrar_ganador')
             img_ganador.src = 'img/jugador2.png'
@@ -705,10 +743,15 @@ reset.addEventListener('click', ()=>{
    score2 = 0;
    score_p1.innerText = score1;
    score_p2.innerText = score2;
+   score1m.innerText = score1;
+   score2m.innerText = score1;
+   nextGame.disabled = false;
+   nextGame.style.backgroundColor = '#8BBCCC'
+   nextGame.style.cursor = 'pointer'
 })
 cerrar.addEventListener('click',()=>{
    
-      modal_ganador.classList.add('cerarwinn')
+      modal_ganador.classList.add('cerrarwinn')
    
 })
 
